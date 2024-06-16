@@ -1,0 +1,10 @@
+services:
+  pythonapp:
+    image: mylandmarktech/python-flask-app:latest
+    restart: always
+    ports:
+    - 8090:5000
+    networks:
+    - pythonappbridge
+networks:
+  pythonappbridge:
